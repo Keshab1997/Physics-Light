@@ -208,12 +208,12 @@ function showLeaderboard() {
     }
 
     leaderboardHTML += `
-        <div class="flex flex-wrap justify-center gap-3 mt-6">
-            <button onclick="resetLeaderboard()" class="action-btn gray">লিডারবোর্ড রিসেট করুন</button>
-            <button onclick="location.reload()" class="action-btn">🔁 আবার খেলুন</button>
-        </div>
-    </div>`;
-
+    <div class="flex flex-wrap justify-center gap-3 mt-6">
+        <button onclick="showReview()" class="action-btn green">📖 রিভিউ দেখুন</button>
+        <button onclick="resetLeaderboard()" class="action-btn gray">লিডারবোর্ড রিসেট করুন</button>
+        <button onclick="location.reload()" class="action-btn">🔁 আবার খেলুন</button>
+    </div>
+</div>`;
     document.getElementById("quiz-container").innerHTML = leaderboardHTML;
 }
 
