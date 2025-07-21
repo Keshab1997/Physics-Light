@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কুইজ সেট 9 - আলো</title>
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="day-mode">
+
+    <main class="quiz-page-container">
+        <header class="quiz-header">
+            <h1 id="quiz-title">লোড হচ্ছে...</h1>
+            <div class="score-board">
+                <span id="correct-count">✔️ 0</span>
+                <span id="wrong-count">❌ 0</span>
+                <span id="timer">00:00</span>
+            </div>
+        </header>
+
+        <div id="quiz-container">
+            <p class="text-center font-semibold">প্রশ্ন লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</p>
+        </div>
+        
+        <!-- নেভিগেশন বাটন -->
+        <div class="page-navigation">
+    <a href="Qset8.html" class="btn btn-secondary "><i class="fas fa-arrow-left"></i> পূর্ববর্তী</a>
+    <a href="../index.html" class="btn btn-primary"><i class="fas fa-home"></i> হোম</a>
+    <a href="Qset10.html" class="btn btn-secondary">পরবর্তী <i class="fas fa-arrow-right"></i></a>
+    </div>
+    </main>
+
+    <script>
+        const quizSet = {
+            name: "আলো (Light) - Set 9 (প্রশ্ন 81-90)",
+            questions: [
+                {
+                    question: "তারাটি আকাশে জ্বলজ্বল করে কারণ-",
+                    options: ["বায়ুমণ্ডল দ্বারা আলোর বিচ্ছুরণ", "বায়ুমণ্ডল দ্বারা আলোর প্রতিফলন", "বায়ুমণ্ডল দ্বারা আলোর বিচ্ছুরণ", "বায়ুমণ্ডল দ্বারা আলোর প্রতিসরণ"],
+                    answer: 3,
+                    explanation: "বায়ুমণ্ডলীয় প্রতিসরণের জন্য তারা মিটমিট করে।"
+                },
+                {
+                    question: "অপটিক্যাল ফাইবার এর প্রধান কাজ করে?",
+                    options: ["প্রসারণ", "বিক্ষিপ্তকরণ", "মোট অভ্যন্তরীণ প্রতিফলন", "প্রতিসরণ"],
+                    answer: 2,
+                    explanation: "অপটিক্যাল ফাইবারে আলো মোট অভ্যন্তরীণ প্রতিফলনের জন্য বারবার প্রতিফলিত হয়।"
+                },
+                {
+                    question: "যখন একটি বস্তু উত্তল লেন্সের উপর থাকে, তখন চিত্রটি পরিবর্ধিত, ভার্চুয়াল এবং খাড়া হয়-",
+                    options: ["F এবং O এর মধ্যে", "2F", "F", "অসীম"],
+                    answer: 0,
+                    explanation: "উত্তল লেন্সে F ও O (অপটিক্যাল সেন্টার) এর মধ্যে বস্তু রাখলে বড়, ভার্চুয়াল, খাড়া চিত্র হয়।"
+                },
+                {
+                    question: "একটি আলোক রশ্মি যা মূল ফোকাসে উপস্থিত হয় অবতল লেন্স প্রতিসরণ পরে নির্গত হবে-",
+                    options: ["প্রধান অক্ষের সমান্তরাল", "মূল ফোকাসের মাধ্যমে", "কোনো বিচ্যুতি ছাড়াই", "বক্রতা কেন্দ্রের মাধ্যমে"],
+                    answer: 0,
+                    explanation: "অবতল লেন্সে ফোকাসে আসা রশ্মি প্রতিসরণের পর প্রধান অক্ষের সমান্তরাল চলে যায়।"
+                },
+                {
+                    question: "হাইপারমেট্রোপিয়া ব্যবহার করে সংশোধন করা যেতে পারে:",
+                    options: ["দ্বি-ফোকাল লেন্স", "ট্রাইফোকাল লেন্স", "উত্তল লেন্স", "অবতল লেন্স"],
+                    answer: 2,
+                    explanation: "দূরদৃষ্টি (হাইপারমেট্রোপিয়া) সংশোধনে উত্তল লেন্স ব্যবহৃত হয়।"
+                },
+                {
+                    question: "যে লেন্স মাঝখানে সরু এবং তার পরিধিতে পুরু তাকে বলা হয়?",
+                    options: ["অবতল লেন্স", "সমান্তরাল লেন্স", "উত্তল লেন্স", "নলাকার লেন্স"],
+                    answer: 0,
+                    explanation: "অবতল লেন্সের মাঝখান সরু, প্রান্ত পুরু।"
+                },
+                {
+                    question: "মায়োপিয়া আক্রান্ত ব্যক্তির দৃষ্টি সংশোধনের জন্য কোন ধরনের লেন্স প্রয়োজন?",
+                    options: ["ডাইভারজিং লেন্স", "বাইফোকাল লেন্স", "নলাকার লেন্স", "কনভারজিং লেন্স"],
+                    answer: 0,
+                    explanation: "মায়োপিয়া (নিকটদৃষ্টি) সংশোধনে অবতল (ডাইভারজিং) লেন্স ব্যবহৃত হয়।"
+                },
+                {
+                    question: "একটি উত্তল লেন্সের ফোকাল দৈর্ঘ্য 50 সেমি। এর POWER গণনা করুন৷",
+                    options: ["4D", "2D", "1D", "3D"],
+                    answer: 1,
+                    explanation: "P = 100/f(cm) = 100/50 = +2D"
+                },
+                {
+                    question: "একটি উত্তল লেন্সের ফোকাল দৈর্ঘ্য 2.5 মিটার। এর শক্তি খুঁজুন।",
+                    options: ["0.3 D", "0.2 D", "0.4 D", "0.5 D"],
+                    answer: 2,
+                    explanation: "P = 1/f(m) = 1/2.5 = +0.4 D"
+                },
+                {
+                    question: "একটি উত্তল লেন্সের ফোকাল দৈর্ঘ্য ...",
+                    options: ["ধনাত্মক", "শূন্য", "ঋণাত্মক", "অসীম"],
+                    answer: 0,
+                    explanation: "উত্তল লেন্সের ফোকাল দৈর্ঘ্য ধনাত্মক।"
+                }
+            ]
+        };
+    </script>
+    
+    <script src="../script.js"></script>
+</body>
+</html>
