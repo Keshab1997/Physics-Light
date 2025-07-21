@@ -184,7 +184,7 @@ function showLeaderboard() {
 
     let leaderboardHTML = `
         <div class="text-center space-y-4">
-            <h2 class="text-2xl font-bold text-purple-700">🏆総合 লিডারবোর্ড🏆</h2>`;
+            <h2 class="text-2xl font-bold text-purple-700">🏆লিডারবোর্ড🏆</h2>`;
 
     if (sortedLeaderboard.length === 0) {
         leaderboardHTML += `<p class="text-gray-500">লিডারবোর্ড এখনো খালি!</p>`;
