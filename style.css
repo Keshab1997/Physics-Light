@@ -498,3 +498,91 @@ body.dark-mode .back-to-home {
 body.dark-mode .back-to-home:hover {
     color: #60a5fa;
 }
+/* রিভিউ কার্ডের স্টাইল */
+.review-card {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+.review-correct {
+    background-color: #e8f5e9; /* হালকা সবুজ */
+    border-left: 5px solid #4caf50; /* গাঢ় সবুজ বর্ডার */
+}
+
+.review-incorrect {
+    background-color: #ffebee; /* হালকা লাল */
+    border-left: 5px solid #f44336; /* গাঢ় লাল বর্ডার */
+}
+
+/* লিডারবোর্ড স্টাইল */
+.leaderboard-list {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.leaderboard-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.leaderboard-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-item .main-score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.leaderboard-item .details-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* সাধারণ বাটন স্টাইল */
+.action-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  color: white;
+  background-color: #3b82f6; /* নীল */
+}
+
+.action-btn:hover {
+    filter: brightness(1.1);
+}
+
+.action-btn:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+.action-btn.green {
+    background-color: #22c55e; /* সবুজ */
+}
+
+.action-btn.gray {
+    background-color: #6b7280; /* ধূসর */
+}
