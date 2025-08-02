@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কুইজ সেট 5 - আলো</title>
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="day-mode">
+
+    <main class="quiz-page-container">
+        <header class="quiz-header">
+            <h1 id="quiz-title">লোড হচ্ছে...</h1>
+            <div class="score-board">
+                <span id="correct-count">✔️ 0</span>
+                <span id="wrong-count">❌ 0</span>
+                <span id="timer">00:00</span>
+            </div>
+        </header>
+
+        <div id="quiz-container">
+            <p class="text-center font-semibold">প্রশ্ন লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</p>
+        </div>
+        
+        <!-- নেভিগেশন বাটন -->
+        <div class="page-navigation">
+    <a href="Qset4.html" class="btn btn-secondary "><i class="fas fa-arrow-left"></i> পূর্ববর্তী</a>
+    <a href="../index.html" class="btn btn-primary"><i class="fas fa-home"></i> হোম</a>
+    <a href="Qset6.html" class="btn btn-secondary">পরবর্তী <i class="fas fa-arrow-right"></i></a>
+    </div>
+        
+    
+    </main>
+
+    <script>
+        const quizSet = {
+            name: "আলো (Light) - Set 5 (প্রশ্ন 41-50)",
+            questions: [
+                {
+                    question: "আপনি যদি একটি আয়নায় তাকান এবং দেখতে পান যে ছবিটি (আপনার প্রতিবিম্ব) আপনার থেকে ছোট, তারপর আয়নার ধরন হল :",
+                    options: ["প্ল্যানো-অবতল আয়না", "অবতল আয়না", "সমতল আয়না", "উত্তল দর্পণ"],
+                    answer: 3,
+                    explanation: "উত্তল দর্পণে চিত্র ছোট হয়।"
+                },
+                {
+                    question: "গোলাকার আয়নার ধারণা কী?",
+                    options: ["আলোর বিকিরণ", "আলোর প্রতিসরণ", "আলোর বিচ্ছুরণ", "আলোর প্রতিফলন"],
+                    answer: 3,
+                    explanation: "গোলীয় আয়নায় আলোর প্রতিফলন ঘটে।"
+                },
+                {
+                    question: "নিচের বিবৃতিগুলোর মধ্যে কোনটি সত্য?",
+                    options: ["বক্রতার ব্যাসার্ধ ফোকাল দৈর্ঘ্যের সমান", "বক্রতার ব্যাসার্ধ ফোকাল দৈর্ঘ্যের অর্ধেক", "বক্রতার ব্যাসার্ধ ফোকাল দৈর্ঘ্যের তিনগুণ", "ফোকাল দৈর্ঘ্যের দ্বিগুণের সমান বক্রতার ব্যাসার্ধ"],
+                    answer: 3,
+                    explanation: "R = 2f"
+                },
+                {
+                    question: "আয়নার সূত্র কি?",
+                    options: ["1/f = 1/u + 1/v", "1/u + 1/v = 1/f", "1/f = 1/v + 1/u", "1/u - 1/v = 1/f"],
+                    answer: 2,
+                    explanation: "লেন্স সূত্র: 1/f = 1/v + 1/u"
+                },
+                {
+                    question: "মিরর সূত্রে 'v' কী নির্দেশ করে?",
+                    options: ["ছবির দূরত্ব", "বস্তুর দূরত্ব", "উল্লম্ব দূরত্ব", "ছবির উচ্চতা"],
+                    answer: 0,
+                    explanation: "v = প্রতিবিম্বের দূরত্ব"
+                },
+                {
+                    question: "বক্রতা R এর ব্যাসার্ধ সহ একটি গোলাকার আয়নার ফোকাল দৈর্ঘ্য কত হবে?",
+                    options: ["R/2", "2R", "3R", "R"],
+                    answer: 0,
+                    explanation: "f = R/2"
+                },
+                {
+                    question: "একটি বস্তু একটি উত্তল আয়নার সামনে স্থাপন করা হয় তাহলে কী ধরনের ছবি তৈরি হবে?",
+                    options: ["ভার্চুয়াল, খাড়া, ছোট আকার, মেরু এবং ফোকাসের মধ্যে", "বাস্তব, উল্টানো, ছোট আকারের", "বাস্তব, উল্টানো, ছোট আকারের", "ভার্চুয়াল, খাড়া, ছোট আকার, ফোকাস FA"],
+                    answer: 0,
+                    explanation: "উত্তল আয়নায় সবসময় ছোট, খাড়া, ভার্চুয়াল চিত্র হয়।"
+                },
+                {
+                    question: "যদি একটি আয়নার ফোকাল দৈর্ঘ্য +15 হয়, তাহলে তা হল:",
+                    options: ["সমতল মিরর", "অবতল আয়না", "উত্তল দর্পণ", "ডাবল লেন্স"],
+                    answer: 2,
+                    explanation: "উত্তল আয়নার ফোকাল দৈর্ঘ্য ধনাত্মক।"
+                },
+                {
+                    question: "একটি বস্তুকে উত্তল আয়নার সামনে রাখা হয় f অনন্ত এবং আয়নার মেরু মধ্যে একটি বিন্দুতে তৈরি হবে ইমেজ।",
+                    options: ["বাস্তব এবং বড়", "বাস্তব এবং ছোট", "ভার্চুয়াল এবং ছোট", "ভার্চুয়াল এবং বড়"],
+                    answer: 2,
+                    explanation: "উত্তল আয়নায় সবসময় ছোট, ভার্চুয়াল চিত্র হয়।"
+                },
+                {
+                    question: "একটি অবতল দর্পণে ফোকাস এবং মেরুটির মাঝখানে একটি বস্তু স্থাপন করা হলে, চিত্রের ধরন কী হবে?",
+                    options: ["অসম্পূর্ণ", "বাস্তব", "ভার্চুয়াল", "সম্পূর্ণ"],
+                    answer: 2,
+                    explanation: "ফোকাস ও মেরুর মধ্যে বস্তু রাখলে অবতল আয়নায় ভার্চুয়াল চিত্র হয়।"
+                }
+            ]
+        };
+    </script>
+    
+    <script src="../script.js"></script>
+</body>
+</html>

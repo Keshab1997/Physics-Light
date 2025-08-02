@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কুইজ সেট 13 - আলো</title>
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="day-mode">
+
+    <main class="quiz-page-container">
+        <header class="quiz-header">
+            <h1 id="quiz-title">লোড হচ্ছে...</h1>
+            <div class="score-board">
+                <span id="correct-count">✔️ 0</span>
+                <span id="wrong-count">❌ 0</span>
+                <span id="timer">00:00</span>
+            </div>
+        </header>
+
+        <div id="quiz-container">
+            <p class="text-center font-semibold">প্রশ্ন লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</p>
+        </div>
+        
+        <!-- নেভিগেশন বাটন -->
+        <div class="page-navigation">
+    <a href="Qset12.html" class="btn btn-secondary "><i class="fas fa-arrow-left"></i> পূর্ববর্তী</a>
+    <a href="../index.html" class="btn btn-primary"><i class="fas fa-home"></i> হোম</a>
+    <a href="Qset14.html" class="btn btn-secondary">পরবর্তী <i class="fas fa-arrow-right"></i></a>
+    </div>
+    </main>
+
+    <script>
+        const quizSet = {
+            name: "আলো (Light) - Set 13 (প্রশ্ন 121-130)",
+            questions: [
+                {
+                    question: "প্রিজমের মধ্য দিয়ে আলো অতিক্রম করে প্রাপ্ত বর্ণালী গঠন করে প্রথম কোন ব্যক্তি দেখেন-",
+                    options: ["পল ভিলার্ড", "বেঞ্জামিন ফ্রাঙ্কলিন", "আইজ্যাক নিউটন", "পিয়েরে কুরি"],
+                    answer: 2,
+                    explanation: "স্যার আইজ্যাক নিউটন প্রথম প্রিজমের মাধ্যমে বর্ণালী পর্যবেক্ষণ করেন।"
+                },
+                {
+                    question: "কাচের প্রিজম দ্বারা আলোর প্রতিফলনের পরে সাদা আলোর সাতটি রঙের মধ্যে কোনটি সবচেয়ে কম বিচ্যুত হয়?",
+                    options: ["নীল", "বেগুনি", "লাল", "কমলা"],
+                    answer: 2,
+                    explanation: "লাল রঙের বিচ্যুতি সবচেয়ে কম।"
+                },
+                {
+                    question: "সাদা আলোর নিচের কোন রঙের তরঙ্গদৈর্ঘ্য সবচেয়ে বেশি?",
+                    options: ["বেগুনি", "কমলা", "লাল", "সবুজ"],
+                    answer: 2,
+                    explanation: "সাতটি রঙের মধ্যে লাল রঙের তরঙ্গদৈর্ঘ্য সবচেয়ে বেশি।"
+                },
+                {
+                    question: "যখন সাদা আলো, যা সাতটি রঙের মিশ্রণ, একটি প্রিজমের মধ্য দিয়ে যায়, তখন কেন এটি বিচ্ছুরিত হয়?",
+                    options: ["সাদা আলো প্রিজম জুড়ে 7টি রঙ নির্গত করে", "সাদা আলোর 7টি রঙ বিভিন্ন গতিতে গ্লাস প্রিজমের মধ্য দিয়ে যায়", "রং প্রিজম দ্বারা প্রতিফলিত হয়", "7টি রং একই গতিতে প্রতিসৃত হয়"],
+                    answer: 1,
+                    explanation: "কাঁচ মাধ্যমে বিভিন্ন রঙের আলোর বেগ ভিন্ন ভিন্ন হয়, তাই প্রতিসরাঙ্কও ভিন্ন হয়, যা বিচ্ছুরণের কারণ।"
+                },
+                {
+                    question: "সূর্যের আলো কয়টি রং নিয়ে গঠিত?",
+                    options: ["তিন", "দুই", "সাত", "পাঁচ"],
+                    answer: 2,
+                    explanation: "সূর্যের সাদা আলো সাতটি মূল রঙের (বেনীআসহকলা) সমাহার।"
+                },
+                {
+                    question: "নিচের কোন ধরনের আয়না আলোর পার্শ্বীয় বিপরীতমুখী দেখায়?",
+                    options: ["উত্তল দর্পণ", "অবতল আয়না", "আয়তক্ষেত্র আয়না", "সমতল আয়না"],
+                    answer: 3,
+                    explanation: "সমতল আয়নায় পার্শ্বীয় পরিবর্তন (Lateral Inversion) ঘটে, যেখানে ডান দিক বাম এবং বাম দিক ডান দেখায়।"
+                },
+                {
+                    question: "যারা বাইফোকাল লেন্স পরেন তারা কোন রোগে আক্রান্ত-",
+                    options: ["হাইপারমেট্রোপিয়া", "প্রেসবায়োপিয়া", "মায়োপিয়া", "ছানি"],
+                    answer: 1,
+                    explanation: "প্রেসবায়োপিয়া (চালশে) রোগে আক্রান্ত ব্যক্তিরা বাইফোকাল লেন্স ব্যবহার করেন, যা দূর ও কাছের উভয় দৃষ্টির সমস্যা সমাধান করে।"
+                },
+                {
+                    question: "পরিষ্কার আকাশের নীল রঙ কোন ঘটনার কারণে?",
+                    options: ["আলোর বিচ্ছুরণ (Scattering)", "আলোর প্রতিফলন", "আলোর বিক্ষেপণ (Dispersion)", "আলোর প্রতিসরণ"],
+                    answer: 0,
+                    explanation: "বায়ুমণ্ডলের ধূলিকণা দ্বারা নীল আলোর তরঙ্গদৈর্ঘ্য সবচেয়ে বেশি বিচ্ছুরিত (scattered) হয়, তাই আকাশ নীল দেখায়।"
+                },
+                {
+                    question: "LED এর পূর্ণরূপ কি?",
+                    options: ["লিনিয়ার ইমার্জেন্সি ডিভাইস", "লাইট এমিটিং ডায়োড", "তরল নির্গত প্রদর্শন", "হালকা নির্গত যন্ত্র"],
+                    answer: 1,
+                    explanation: "LED এর পূর্ণরূপ হলো Light Emitting Diode।"
+                },
+                {
+                    question: "মায়োপিয়া' নামেও পরিচিত-",
+                    options: ["দৃষ্টিভঙ্গি", "নিকট-দৃষ্টি", "প্রেসবায়োপিয়া", "দূরদৃষ্টি"],
+                    answer: 1,
+                    explanation: "মায়োপিয়া হলো নিকট-দৃষ্টি (Nearsightedness)।"
+                }
+            ]
+        };
+    </script>
+    
+    <script src="../script.js"></script>
+</body>
+</html>

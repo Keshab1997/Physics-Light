@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কুইজ সেট 14 - আলো</title>
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="day-mode">
+
+    <main class="quiz-page-container">
+        <header class="quiz-header">
+            <h1 id="quiz-title">লোড হচ্ছে...</h1>
+            <div class="score-board">
+                <span id="correct-count">✔️ 0</span>
+                <span id="wrong-count">❌ 0</span>
+                <span id="timer">00:00</span>
+            </div>
+        </header>
+
+        <div id="quiz-container">
+            <p class="text-center font-semibold">প্রশ্ন লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</p>
+        </div>
+        
+        <!-- নেভিগেশন বাটন -->
+        <div class="page-navigation">
+    <a href="Qset13.html" class="btn btn-secondary "><i class="fas fa-arrow-left"></i> পূর্ববর্তী</a>
+    <a href="../index.html" class="btn btn-primary"><i class="fas fa-home"></i> হোম</a>
+    <a href="Qset14.html" class="btn btn-secondary disabled">পরবর্তী <i class="fas fa-arrow-right"></i></a>
+    </div>
+    </main>
+
+    <script>
+        const quizSet = {
+            name: "আলো (Light) - Set 14 (প্রশ্ন 131-134)",
+            questions: [
+                {
+                    question: "আলোক রশ্মি তাদের মূল পথ থেকে বিচ্যুত হওয়ার ঘটনাকে, যখন তারা একটি মাধ্যম থেকে অন্য মাধ্যমে চলে যায়, তাকে বলা হয়-",
+                    options: ["বাধা", "প্রতিফলন", "বিবর্তন", "প্রতিসরণ"],
+                    answer: 3,
+                    explanation: "মাধ্যম পরিবর্তনের কারণে আলোর পথ পরিবর্তন হওয়াকে প্রতিসরণ বলে।"
+                },
+                {
+                    question: "সূর্যোদয় এবং সূর্যাস্তের চারপাশে যে পর্বতের চূড়াগুলি গোলাপী বা কমলা বর্ণ ধারণ করে সেই ঘটনাটির নাম কী?",
+                    options: ["Brillouin বিক্ষিপ্তকরণ", "বিভ্রান্তির বৃত্ত", "আলপেংলো", "ব্যারেল বিকৃতি"],
+                    answer: 2,
+                    explanation: "এই ঘটনাকে আলপেংলো (Alpenglow) বলা হয়, যা সূর্যোদয় বা সূর্যাস্তের সময় পর্বতচূড়ায় দেখা যায়।"
+                },
+                {
+                    question: "সূর্য দ্বারা নির্গত আলোর রং কি?",
+                    options: ["হলুদ", "কমলা", "লাল", "সাদা"],
+                    answer: 3,
+                    explanation: "সূর্যের আলো মূলত সাদা, যা বায়ুমণ্ডল ভেদ করার সময় কিছুটা হলুদ দেখায়। এটি সাতটি রঙের মিশ্রণ।"
+                },
+                {
+                    question: "বায়ুর পরম প্রতিসরণ সূচক কী?",
+                    options: ["1.03", "1.003", "1.00003", "1.0003"],
+                    answer: 3,
+                    explanation: "বায়ুর পরম প্রতিসরাঙ্ক প্রায় 1.0003।"
+                }
+            ]
+        };
+    </script>
+    
+    <script src="../script.js"></script>
+</body>
+</html>

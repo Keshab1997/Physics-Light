@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কুইজ সেট 7 - আলো</title>
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="day-mode">
+
+    <main class="quiz-page-container">
+        <header class="quiz-header">
+            <h1 id="quiz-title">লোড হচ্ছে...</h1>
+            <div class="score-board">
+                <span id="correct-count">✔️ 0</span>
+                <span id="wrong-count">❌ 0</span>
+                <span id="timer">00:00</span>
+            </div>
+        </header>
+
+        <div id="quiz-container">
+            <p class="text-center font-semibold">প্রশ্ন লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</p>
+        </div>
+        
+        <!-- নেভিগেশন বাটন -->
+        <div class="page-navigation">
+    <a href="Qset6.html" class="btn btn-secondary "><i class="fas fa-arrow-left"></i> পূর্ববর্তী</a>
+    <a href="../index.html" class="btn btn-primary"><i class="fas fa-home"></i> হোম</a>
+    <a href="Qset8.html" class="btn btn-secondary">পরবর্তী <i class="fas fa-arrow-right"></i></a>
+    </div>
+    </main>
+
+    <script>
+        const quizSet = {
+            name: "আলো (Light) - Set 7 (প্রশ্ন 61-70)",
+            questions: [
+                {
+                    question: "একটি সাধারণ ম্যাগনিফাইং গ্লাস অন্তর্ভুক্ত:",
+                    options: ["উচ্চ ফোকাল দৈর্ঘ্যের উত্তল লেন্স", "ছোট ফোকাল দৈর্ঘ্যের অবতল লেন্স", "উচ্চ ফোকাল দৈর্ঘ্যের অবতল লেন্স", "ছোট ফোকাল দৈর্ঘ্যের উত্তল লেন্স"],
+                    answer: 3,
+                    explanation: "ম্যাগনিফাইং গ্লাসে ছোট ফোকাল দৈর্ঘ্যের উত্তল লেন্স ব্যবহৃত হয়, যাতে বড় করে দেখা যায়।"
+                },
+                {
+                    question: "নিচের কোনটির আলোর প্রতিসরণ উদাহরণ নয়?",
+                    options: ["রংধনু গঠন", "তারার মিটমিট করে", "মানুষের চোখের দ্বারা চিত্র গঠন", "অস্তগামী সূর্যের লাল রং"],
+                    answer: 3,
+                    explanation: "অস্তগামী সূর্যের লাল রং বিচ্ছুরণ (scattering) এর উদাহরণ, প্রতিসরণ নয়।"
+                },
+                {
+                    question: "রাতে আকাশে তারাগুলো মিটমিট করে কেন?",
+                    options: ["অগ্রিম আলোর কারণে", "আলোর বায়ুমণ্ডলীয় প্রতিসরণের কারণে", "আলোর বিচ্ছুরণের কারণে", "আলোর বিক্ষেপণ"],
+                    answer: 1,
+                    explanation: "বায়ুমণ্ডলীয় প্রতিসরণের জন্য তারার আলো মিটমিট করে।"
+                },
+                {
+                    question: "একটি চামচ যা জলে বাঁকানো দেখায় তা নিচের কোনটির উদাহরণ?",
+                    options: ["প্রতিফলন", "প্রতিসরণ", "ধরে রাখা", "লক্ষ"],
+                    answer: 1,
+                    explanation: "পানিতে চামচ বাঁকা দেখায় কারণ আলো এক মাধ্যম থেকে অন্য মাধ্যমে গেলে প্রতিসরণ ঘটে।"
+                },
+                {
+                    question: "নিচের কোনটিতে অবদান রাখে হীরার স্পার্কিং?",
+                    options: ["মোট অভ্যন্তরীণ প্রতিফলন", "হীরার উচ্চ প্রতিসরণ সূচক", "বিচ্ছুরণ", "হীরা"],
+                    answer: 0,
+                    explanation: "হীরার স্পার্কিং-এর প্রধান কারণ মোট অভ্যন্তরীণ প্রতিফলন।"
+                },
+                {
+                    question: "বায়ুর পরম প্রতিসরণ সূচক কী?",
+                    options: ["1.03", "1.003", "1.00003", "1.0003"],
+                    answer: 2,
+                    explanation: "বায়ুর পরম প্রতিসরণ সূচক প্রায় 1.00003।"
+                },
+                {
+                    question: "প্রতিসরণ সূচকের একক কী?",
+                    options: ["m⁻¹", "Dioptre", "কোন একক নেই", "কিলোগ্রাম"],
+                    answer: 2,
+                    explanation: "প্রতিসরণ সূচক একটি অনাদিক সংখ্যা, একক নেই।"
+                },
+                {
+                    question: "জলের প্রতিসরণ সূচক 4/3 হলে জলেতে আলোর গতিবেগ কত হবে? (c = 3x10⁸ m/s)",
+                    options: ["2.25×10⁸ m/s", "1.5x10⁸ m/s", "2.67x10⁸ m/s", "4x10⁸ m/s"],
+                    answer: 0,
+                    explanation: "v = c/μ = 3x10⁸ / (4/3) = 2.25x10⁸ m/s"
+                },
+                {
+                    question: "যেকোনো মাধ্যমের পরম প্রতিসরণ সূচক-",
+                    options: ["একের কম", "1", "একের অধিক", "0"],
+                    answer: 2,
+                    explanation: "শূন্য মাধ্যমের তুলনায় অন্য সব মাধ্যমের প্রতিসরাঙ্ক একের বেশি।"
+                },
+                {
+                    question: "রাতে তারার মিটমিট কারণে ঘটে-",
+                    options: ["বায়ুমণ্ডলীয় প্রতিসরণ", "আলোর বিচ্ছুরণ", "আলোর প্রতিফলন", "আলোর বিক্ষেপণ"],
+                    answer: 0,
+                    explanation: "বায়ুমণ্ডলীয় প্রতিসরণের জন্য তারার আলো মিটমিট করে।"
+                }
+            ]
+        };
+    </script>
+    
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কুইজ সেট 11 - আলো</title>
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="day-mode">
+
+    <main class="quiz-page-container">
+        <header class="quiz-header">
+            <h1 id="quiz-title">লোড হচ্ছে...</h1>
+            <div class="score-board">
+                <span id="correct-count">✔️ 0</span>
+                <span id="wrong-count">❌ 0</span>
+                <span id="timer">00:00</span>
+            </div>
+        </header>
+
+        <div id="quiz-container">
+            <p class="text-center font-semibold">প্রশ্ন লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</p>
+        </div>
+        
+        <!-- নেভিগেশন বাটন -->
+        <div class="page-navigation">
+    <a href="Qset10.html" class="btn btn-secondary "><i class="fas fa-arrow-left"></i> পূর্ববর্তী</a>
+    <a href="../index.html" class="btn btn-primary"><i class="fas fa-home"></i> হোম</a>
+    <a href="Qset12.html" class="btn btn-secondary">পরবর্তী <i class="fas fa-arrow-right"></i></a>
+    </div>
+    </main>
+
+    <script>
+        const quizSet = {
+            name: "আলো (Light) - Set 11 (প্রশ্ন 101-110)",
+            questions: [
+                {
+                    question: "যদি একটি সংশোধনমূলক লেন্সের শক্তি +2.0D হয়, তাহলে এটি -",
+                    options: ["উত্তল লেন্স", "উত্তল দর্পণ", "অবতল লেন্স", "অবতল আয়না"],
+                    answer: 0,
+                    explanation: "ধনাত্মক শক্তি মানে উত্তল লেন্স।"
+                },
+                {
+                    question: "একটি অবতল লেন্সের অপটিক্যাল কেন্দ্রের মধ্য দিয়ে যাওয়া আলোর রশ্মি প্রতিসরণের পর বেরিয়ে আসবে-",
+                    options: ["কোনো বিচ্যুতি ছাড়াই", "প্রধান ফোকাস থেকে", "বক্রতার কেন্দ্ৰ", "প্রধান অক্ষের সমান্তরাল"],
+                    answer: 0,
+                    explanation: "অপটিক্যাল সেন্টার দিয়ে যাওয়া রশ্মি কোনো বিচ্যুতি ছাড়াই যায়।"
+                },
+                {
+                    question: "আলো চোখে প্রবেশ করে-",
+                    options: ["সিলিয়ারি পেশী", "আইরিস", "কর্নিয়া", "লেন্স"],
+                    answer: 2,
+                    explanation: "কর্নিয়া দিয়ে আলো প্রথমে চোখে প্রবেশ করে।"
+                },
+                {
+                    question: "দূরদর্শিতা ও বলা হয়-",
+                    options: ["হাইপারমেট্রোপিয়া", "মায়োপিয়া", "অ্যামেট্রোপিয়া", "প্রেসবায়োপিয়া"],
+                    answer: 0,
+                    explanation: "দূরদৃষ্টি = হাইপারমেট্রোপিয়া"
+                },
+                {
+                    question: "মানুষের কাছাকাছি দৃষ্টিশক্তি বলা হয়:",
+                    options: ["মায়োপিয়া", "হাইপারমেট্রোপিয়া", "ছানি", "প্রেসবায়োপিয়া"],
+                    answer: 0,
+                    explanation: "নিকটদৃষ্টি = মায়োপিয়া"
+                },
+                {
+                    question: "মায়োপিয়ায় আক্রান্ত ব্যক্তিরা লেন্স ব্যবহার করেন-",
+                    options: ["নলাকার", "অবতল (-)", "উত্তল-অতল", "উত্তল"],
+                    answer: 1,
+                    explanation: "মায়োপিয়া সংশোধনে অবতল লেন্স ব্যবহৃত হয়।"
+                },
+                {
+                    question: "যে ব্যাধিতে একজন ব্যক্তি দূরের বস্তু পরিষ্কারভাবে দেখতে পায় না তাকে বলে।",
+                    options: ["হাইপারমেট্রোপিয়া", "মায়োপিয়া", "রাতের অন্ধত্ব", "স্ট্রাইভিসমাস"],
+                    answer: 1,
+                    explanation: "মায়োপিয়ায় দূরের বস্তু অস্পষ্ট দেখা যায়।"
+                },
+                {
+                    question: "হাইপারমেট্রোপিয়া বা দূরদৃষ্টিতে আক্রান্ত ব্যক্তির কাছে কাছাকাছি বিন্দু হল ---- স্বাভাবিক কাছাকাছি বিন্দু থেকে আরও দূরে",
+                    options: ["২৫ সেমি", "২৭ সেমি", "২৬ সেমি", "২৪ সেমি"],
+                    answer: 0,
+                    explanation: "স্বাভাবিক নিকটবিন্দু ২৫ সেমি, হাইপারমেট্রোপিয়ায় এটি ২৫ সেমি থেকে দূরে সরে যায়।"
+                },
+                {
+                    question: "একজন সুস্থ স্বাভাবিক দৃষ্টির ব্যক্তির চোখে কোন বস্তুর প্রতিচ্ছবি কোথায় গঠিত হয়?",
+                    options: ["রেটিনায়", "রেটিনার পিছনে", "কর্নিয়ায়", "রেটিনার আগে"],
+                    answer: 0,
+                    explanation: "স্বাভাবিকভাবে চিত্র রেটিনায় গঠিত হয়।"
+                },
+                {
+                    question: "হাইপারমেট্রোপিয়া ভুক্তভোগীরা কোন লেন্স ব্যবহার করে-",
+                    options: ["অবতল", "উত্তল", "নলাকার", "গ্লাইড"],
+                    answer: 1,
+                    explanation: "হাইপারমেট্রোপিয়া সংশোধনে উত্তল লেন্স ব্যবহৃত হয়।"
+                }
+            ]
+        };
+    </script>
+    
+    <script src="../script.js"></script>
+</body>
+</html>

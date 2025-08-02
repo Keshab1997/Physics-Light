@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কুইজ সেট 4 - আলো</title>
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="day-mode">
+
+    <main class="quiz-page-container">
+        <header class="quiz-header">
+            <h1 id="quiz-title">লোড হচ্ছে...</h1>
+            <div class="score-board">
+                <span id="correct-count">✔️ 0</span>
+                <span id="wrong-count">❌ 0</span>
+                <span id="timer">00:00</span>
+            </div>
+        </header>
+
+        <div id="quiz-container">
+            <p class="text-center font-semibold">প্রশ্ন লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</p>
+        </div>
+        
+       <!-- নেভিগেশন বাটন -->
+        <div class="page-navigation">
+    <a href="Qset3.html" class="btn btn-secondary "><i class="fas fa-arrow-left"></i> পূর্ববর্তী</a>
+    <a href="../index.html" class="btn btn-primary"><i class="fas fa-home"></i> হোম</a>
+    <a href="Qset5.html" class="btn btn-secondary">পরবর্তী <i class="fas fa-arrow-right"></i></a>
+    </div>
+        
+      
+    </main>
+
+    <script>
+        const quizSet = {
+            name: "আলো (Light) - Set 4 (প্রশ্ন 31-40)",
+            questions: [
+                {
+                    question: "যানবাহনে রিয়ার ভিউ উইং মিরর হিসেবে কোন ধরনের আয়না ব্যবহার করা হয়?",
+                    options: ["অবতল এবং উত্তল", "অবতল", "উত্তল", "সমতল"],
+                    answer: 2,
+                    explanation: "উত্তল আয়না বিস্তৃত দৃশ্য দেয়, তাই রিয়ার ভিউ মিরর হিসেবে ব্যবহৃত হয়।"
+                },
+                {
+                    question: "উত্তল দর্পণ ব্যবহার করা হয় -",
+                    options: ["শেভিং আয়না", "গাড়ির হেডলাইট", "রিয়ার-ভিউ মিরর", "দাঁতের আয়না"],
+                    answer: 2,
+                    explanation: "উত্তল দর্পণ গাড়ির রিয়ার-ভিউ মিরর হিসেবে ব্যবহৃত হয়।"
+                },
+                {
+                    question: "একটি অবতল আয়নার বক্রতার ব্যাসার্ধ 30 সেমি। কার্টেসিয়ান সাইন কনভেনশন অনুসরণ করে, এর ফোকাল দৈর্ঘ্য-",
+                    options: ["-15 সেমি", "-30 সেমি", "+15 সেমি", "+30 সেমি"],
+                    answer: 0,
+                    explanation: "f = R/2 = 30/2 = 15, অবতল আয়নার জন্য ঋণাত্মক।"
+                },
+                {
+                    question: "একটি গোলাকার আয়নার বক্রতার কেন্দ্র কী?",
+                    options: ["এটি একটি ফাঁপা গোলকের কেন্দ্র", "এটি একটি গোলাকার আয়নার মধ্যবিন্দু", "এটি এমন একটি বিন্দু যেখান থেকে আলোর রশ্মি একটি উত্তল আয়নার প্রধান অক্ষ থেকে আসছে বলে মনে হয়", "এটি প্রধান অক্ষের সেই বিন্দু যার মধ্য দিয়ে প্রধান অক্ষের সমান্তরাল আলোর রশ্মি প্রতিফলনের পর চলে যায়"],
+                    answer: 0,
+                    explanation: "গোলীয় আয়নার বক্রতার কেন্দ্র হল ফাঁপা গোলকের কেন্দ্র।"
+                },
+                {
+                    question: "যে বিন্দুতে সমস্ত রশ্মি মিলিত হয় তাকে বলা হয়-",
+                    options: ["অ্যাপারচার", "মেরু", "প্রধান অক্ষ", "ফোকাস"],
+                    answer: 3,
+                    explanation: "সমান্তরাল রশ্মি প্রতিফলনের পর ফোকাসে মিলিত হয়।"
+                },
+                {
+                    question: "একটি আয়নার ফোকাল দৈর্ঘ্য এবং বক্রতার ব্যাসার্ধের মধ্যে সম্পর্ক-",
+                    options: ["R = f/2", "R = 2f", "f = 2R", "R = f"],
+                    answer: 1,
+                    explanation: "বক্রতার ব্যাসার্ধ = 2 x ফোকাল দৈর্ঘ্য।"
+                },
+                {
+                    question: "একটি গোলাকার আয়নার ফোকাল দৈর্ঘ্য হল-",
+                    options: ["এর বক্রতার ব্যাসার্ধ দ্বিগুণ", "এর বক্রতার ব্যাসার্ধের তিনগুণ", "এর বক্রতার ব্যাসার্ধের অর্ধেক", "এর বক্রতার ব্যাসার্ধ"],
+                    answer: 2,
+                    explanation: "f = R/2"
+                },
+                {
+                    question: "কোন আয়না কে অভিসারী আয়নাও বলা হয় -",
+                    options: ["উত্তল আয়না", "অবতল আয়না", "সমতল আয়না", "এগুলোর কোনোটিই নয়"],
+                    answer: 1,
+                    explanation: "অবতল আয়না অভিসারী আয়না।"
+                },
+                {
+                    question: "মিরর সমীকরণের ক্ষেত্রে নিচের কোন বিবৃতিটি সঠিক?",
+                    options: ["বক্রতার কেন্দ্রটি বক্রতার মেরু এবং ব্যাসার্ধ থেকে সমানভাবে দূরে অবস্থিত।", "সমস্ত দূরত্ব অবশ্যই আয়নার টি থেকে পরিমাপ করতে হবে।", "সমস্ত রশ্মি মেরুতে বিচ্যুত হবে।", "মেরু এবং ফোকাস একই বিন্দুতে।"],
+                    answer: 1,
+                    explanation: "মিরর সূত্রে সব দূরত্ব মেরু থেকে মাপা হয়।"
+                },
+                {
+                    question: "প্রতিফলিত পৃষ্ঠের সাথে একটি গোলাকার আয়না ভেতরের দিকে বাঁকা হলে তাকে বলা হয়-",
+                    options: ["অবতল আয়না", "উত্তল দর্পণ", "এর মধ্যে নেই", "সমতল আয়না"],
+                    answer: 0,
+                    explanation: "ভেতরের দিকে বাঁকা হলে অবতল আয়না।"
+                }
+            ]
+        };
+    </script>
+    
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কুইজ সেট 12 - আলো</title>
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="day-mode">
+
+    <main class="quiz-page-container">
+        <header class="quiz-header">
+            <h1 id="quiz-title">লোড হচ্ছে...</h1>
+            <div class="score-board">
+                <span id="correct-count">✔️ 0</span>
+                <span id="wrong-count">❌ 0</span>
+                <span id="timer">00:00</span>
+            </div>
+        </header>
+
+        <div id="quiz-container">
+            <p class="text-center font-semibold">প্রশ্ন লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</p>
+        </div>
+        
+        <!-- নেভিগেশন বাটন -->
+        <div class="page-navigation">
+    <a href="Qset11.html" class="btn btn-secondary "><i class="fas fa-arrow-left"></i> পূর্ববর্তী</a>
+    <a href="../index.html" class="btn btn-primary"><i class="fas fa-home"></i> হোম</a>
+    <a href="Qset13.html" class="btn btn-secondary">পরবর্তী <i class="fas fa-arrow-right"></i></a>
+    </div>
+    </main>
+
+    <script>
+        const quizSet = {
+            name: "আলো (Light) - Set 12 (প্রশ্ন 111-120)",
+            questions: [
+                {
+                    question: "দু'টি ফোকাল লেংথ বিশিষ্ট লেন্স এমন ব্যক্তিরা ব্যবহার করেন যারা ভুক্তভোগী...",
+                    options: ["মায়োপিয়া এবং হাইপারমেট্রোপিয়া উভয়ই", "মায়োপিয়া বা হাইপারমেট্রোপিয়া", "মায়োপিয়া কিন্তু হাইপারমেট্রোপিয়া নয়", "হাইপারমেট্রোপিয়া কিন্তু মায়োপিয়া নয়"],
+                    answer: 0,
+                    explanation: "বাইফোকাল লেন্স (প্রেসবায়োপিয়া) দুটি সমস্যার জন্য ব্যবহৃত হয়।"
+                },
+                {
+                    question: "এই ডিভাইসগুলির মধ্যে কোনটি শুধুমাত্র উত্তল লেন্স ব্যবহার করে?",
+                    options: ["গাড়ির হেডলাইট", "টর্চলাইট", "মাইক্রোস্কোপ", "বায়োস্কোপ"],
+                    answer: 2,
+                    explanation: "মাইক্রোস্কোপে উত্তল লেন্স ব্যবহৃত হয়।"
+                },
+                {
+                    question: "থিয়েটারে 3D সিনেমা দেখার সময়, আমাদের বিশেষ চশমা পরতে হবে কারণ:",
+                    options: ["চশমা আমাদের বাম এবং ডান চোখকে বিভিন্ন চিত্র দেখতে দেয়", "3D ফিল্ম বিশেষ রঙ ব্যবহার করে যা মানুষের চোখ দ্বারা অনুভব করা যায় না", "3D ফিল্মগুলি সাধারণ ফিল্মের চেয়ে উজ্জ্বল এবং সরাসরি দেখা গেলে আমাদের চোখের ক্ষতি করতে পারে", "চশমা উভয় চোখকে একই চিত্র দেখতে দেয়"],
+                    answer: 0,
+                    explanation: "3D চশমা দুই চোখে দুই ভিন্ন চিত্র দেখায়, যা মস্তিষ্কে 3D অনুভূতি তৈরি করে।"
+                },
+                {
+                    question: "পেরিস্কোপে ব্যবহৃত হয়-",
+                    options: ["সমতল আয়না", "অবতল লেন্স", "প্রিজম", "উত্তল লেন্স"],
+                    answer: 0,
+                    explanation: "পেরিস্কোপে সমতল আয়না ব্যবহৃত হয়।"
+                },
+                {
+                    question: "নিচের কোনটিতে অপটিক্যাল লেন্স নেই?",
+                    options: ["পেরিস্কোপ", "মাইক্রোস্কোপ", "টেলিস্কোপ", "স্টেথোস্কোপ"],
+                    answer: 3,
+                    explanation: "স্টেথোস্কোপ শব্দ শোনার যন্ত্র, এতে লেন্স থাকে না। পেরিস্কোপে সাধারণত আয়না থাকে।"
+                },
+                {
+                    question: "কোনটি সূর্যের আলোকে তার উপাদান রঙে ভাগ করতে পারে?",
+                    options: ["প্রতিসরণ", "প্রিজম", "প্রতিফলন", "বিকিরণ"],
+                    answer: 1,
+                    explanation: "প্রিজমে সাদা আলো বিচ্ছুরিত হয়ে সাত রঙে বিভক্ত হয়।"
+                },
+                {
+                    question: "প্রিজম কি করে?",
+                    options: ["আলো প্রতিফলিত করে", "এটি আলোর মধ্য দিয়ে যেতে বাধা দেয়", "এটি এর মধ্য দিয়ে যাওয়া আলোকে ছড়িয়ে দেয়", "এটি তার পথ থেকে আলো প্রতিসরণ করে"],
+                    answer: 3, // Answer C is also partially correct (dispersion/spreading), but D (refraction) is the fundamental process.
+                    explanation: "প্রিজমে আলো মূলত প্রতিসরিত হয় এবং ভিন্ন ভিন্ন রঙের আলোর প্রতিসরণ ভিন্ন হওয়ায় বিচ্ছুরণ ঘটে।"
+                },
+                {
+                    question: "রংধনু একটি প্রাকৃতিক ঘটনা, যা দেখায়-",
+                    options: ["প্রতিসরণ", "বিবর্তন", "প্রতিফলন", "বিচ্ছুরণ"],
+                    answer: 3,
+                    explanation: "রংধনু আলোর বিচ্ছুরণ (dispersion) এর একটি সুন্দর উদাহরণ।"
+                },
+                {
+                    question: "কোন রঙ একটি প্রিজম মাধ্যমে সবচেয়ে কম বিচ্যুত হয়-",
+                    options: ["ভায়োলেট", "লাল", "নীল", "সবুজ"],
+                    answer: 1,
+                    explanation: "লাল রঙের তরঙ্গদৈর্ঘ্য বেশি, তাই এর বিচ্যুতি সবচেয়ে কম হয়।"
+                },
+                {
+                    question: "সাদা আলোর প্রতিটি রঙ ভিন্ন কোণে প্রিজমে প্রতিসৃত হলে যা গঠিত হয়-",
+                    options: ["রঙের বিস্তার", "রংধনু", "রঙিন ছবি", "বর্ণালী"],
+                    answer: 3,
+                    explanation: "প্রিজমে সাদা আলো সাত রঙে বিভক্ত হলে যে রঙিন পটি তৈরি হয় তাকে বর্ণালী (Spectrum) বলে।"
+                }
+            ]
+        };
+    </script>
+    
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কুইজ সেট 6 - আলো</title>
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="day-mode">
+
+    <main class="quiz-page-container">
+        <header class="quiz-header">
+            <h1 id="quiz-title">লোড হচ্ছে...</h1>
+            <div class="score-board">
+                <span id="correct-count">✔️ 0</span>
+                <span id="wrong-count">❌ 0</span>
+                <span id="timer">00:00</span>
+            </div>
+        </header>
+
+        <div id="quiz-container">
+            <p class="text-center font-semibold">প্রশ্ন লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</p>
+        </div>
+        
+       <!-- নেভিগেশন বাটন -->
+        <div class="page-navigation">
+    <a href="Qset5.html" class="btn btn-secondary "><i class="fas fa-arrow-left"></i> পূর্ববর্তী</a>
+    <a href="../index.html" class="btn btn-primary"><i class="fas fa-home"></i> হোম</a>
+    <a href="Qset7.html" class="btn btn-secondary">পরবর্তী <i class="fas fa-arrow-right"></i></a>
+    </div>
+        
+      
+    </main>
+
+    <script>
+        const quizSet = {
+            name: "আলো (Light) - Set 6 (প্রশ্ন 51-60)",
+            questions: [
+                {
+                    question: "অবতল আয়নার সামনে যখন কোনো বস্তুকে অসীমতায় রাখা হয়, তখন তার প্রতিবিম্ব হয়-",
+                    options: ["লক্ষ্য", "ফোকাস (F) এবং কেন্দ্র (C) এর মধ্যে", "কেন্দ্র (C)", "কেন্দ্র থেকে দূরে (C)"],
+                    answer: 1,
+                    explanation: "অসীমে বস্তু রাখলে চিত্র ফোকাসে হয়।"
+                },
+                {
+                    question: "অবতল আয়নার বক্রতার কেন্দ্রের বাইরে কোনো বস্তুকে স্থাপন করা হলে, চিত্রটি তৈরি হবে:",
+                    options: ["C ছাড়াও", "ফোকাসের উপর", "C-তে", "ফোকাস এবং C এর মধ্যে"],
+                    answer: 3,
+                    explanation: "বক্রতার কেন্দ্রের বাইরে বস্তু রাখলে চিত্র ফোকাস ও C এর মধ্যে হয়।"
+                },
+                {
+                    question: "দাঁতের চিকিত্সকরা একটি অবতল আয়না ব্যবহার করেন কারণ এটিতে নির্মিত চিত্রটি......",
+                    options: ["বাস্তব এবং বড়", "ভার্চুয়াল কিন্তু কুয়াশাচ্ছন্ন", "বাস্তব কিন্তু", "ভার্চুয়াল এবং বড়"],
+                    answer: 3,
+                    explanation: "অবতল আয়নায় ফোকাস ও মেরুর মধ্যে বস্তু রাখলে বড় ভার্চুয়াল চিত্র হয়।"
+                },
+                {
+                    question: "যানবাহনের হেডলাইটে ব্যবহৃত আয়না কি?",
+                    options: ["সমতল মিরর", "সমতল-উত্তল আয়না", "উত্তল দর্পণ", "অবতল আয়না"],
+                    answer: 3,
+                    explanation: "হেডলাইটে অবতল আয়না ব্যবহৃত হয়।"
+                },
+                {
+                    question: "অবতল আয়নার বক্রতার কেন্দ্রে একটি বস্তু স্থাপন করা হয়। এর প্রতিফলন কোথায় ঘটবে:",
+                    options: ["ফোকাস এবং বক্রতা কেন্দ্রের মধ্যে একটি বিন্দুতে", "ফোকাস", "বক্রতার কেন্দ্রের বাইরে", "বক্রতার কেন্দ্র"],
+                    answer: 3,
+                    explanation: "বক্রতার কেন্দ্রে বস্তু রাখলে চিত্রও কেন্দ্রে হয়।"
+                },
+                {
+                    question: "নিচের কোনটিতে অবতল আয়না ব্যবহার করা হয় না?",
+                    options: ["সার্চ লাইট", "রিয়ারভিউ মিরর", "গাড়ির হেডলাইট", "সৌর চুল্লি"],
+                    answer: 1,
+                    explanation: "রিয়ারভিউ মিররে উত্তল আয়না ব্যবহৃত হয়।"
+                },
+                {
+                    question: "একে অপরিবর্তিত আয়নাও বলা হয়-",
+                    options: ["অবতল আয়না", "উত্তল আয়না", "প্ল্যানো-উত্তল আয়না", "সমতল আয়না"],
+                    answer: 3,
+                    explanation: "সমতল আয়নায় চিত্রের আকার অপরিবর্তিত থাকে।"
+                },
+                {
+                    question: "যদি একটি অবতল আয়নার বক্রতার ব্যাসার্ধ 6.2 সেমি হয়, তাহলে এর ফোকাল দৈর্ঘ্য হবে-",
+                    options: ["12.4", "2.6", "3.1", "6"],
+                    answer: 2,
+                    explanation: "f = R/2 = 6.2/2 = 3.1 cm"
+                },
+                {
+                    question: "যখন একটি বস্তুকে c এবং F এর মধ্যে স্থাপন করা হয়, তখন অবতল আয়নায় চিত্রটি কোথায় তৈরি হবে?",
+                    options: ["F-A", "2F", "অসীম", "C এর বাইরে"],
+                    answer: 3,
+                    explanation: "C ও F এর মধ্যে বস্তু রাখলে চিত্র C এর বাইরে হয়।"
+                },
+                {
+                    question: "চিত্রের উচ্চতা এবং বস্তুর উচ্চতার অনুপাতকে বলা হয়-",
+                    options: ["পার্শ্বীয় অন্তর্নিবেশ", "মিরর সূত্র", "প্রতিফলনের প্রথম সূত্র", "লিনিয়ার ম্যাগনিফিকেশন (রৈখিক বিবর্ধন)"],
+                    answer: 3,
+                    explanation: "m = h'/h = v/u"
+                }
+            ]
+        };
+    </script>
+    
+    <script src="../script.js"></script>
+</body>
+</html>

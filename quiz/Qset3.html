@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কুইজ সেট 3 - আলো</title>
+    
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="day-mode">
+
+    <main class="quiz-page-container">
+        <header class="quiz-header">
+            <h1 id="quiz-title">লোড হচ্ছে...</h1>
+            <div class="score-board">
+                <span id="correct-count">✔️ 0</span>
+                <span id="wrong-count">❌ 0</span>
+                <span id="timer">00:00</span>
+            </div>
+        </header>
+
+        <div id="quiz-container">
+            <p class="text-center font-semibold">প্রশ্ন লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</p>
+        </div>
+        
+       <!-- নেভিগেশন বাটন -->
+        <div class="page-navigation">
+    <a href="Qset2.html" class="btn btn-secondary "><i class="fas fa-arrow-left"></i> পূর্ববর্তী</a>
+    <a href="../index.html" class="btn btn-primary"><i class="fas fa-home"></i> হোম</a>
+    <a href="Qset4.html" class="btn btn-secondary">পরবর্তী <i class="fas fa-arrow-right"></i></a>
+    </div>
+        
+      
+    </main>
+
+    <script>
+        const quizSet = {
+            name: "আলো (Light) - Set 3 (প্রশ্ন 21-30)",
+            questions: [
+                {
+                    question: "আকাশের নীল রঙের কারণ:",
+options: ["আলোর প্রতিসরণ", "আলোর বিচ্ছুরণ", "আলোর বিবর্তন", "আলোর বিস্ফোরণ"],
+                    answer: 1,
+                    explanation: "নীল আলোর বিক্ষেপণ বেশি, তাই আকাশ নীল।"
+                },
+                {
+                    question: "মেঘের রঙ সাদা হওয়ার কারণ-",
+                    options: ["আলোর প্রতিসরণ", "বিকিরণ", "আলোর প্রতিফলন", "আলোর বিচ্ছুরণ"],
+                    answer: 3,
+                    explanation: "মেঘে সব বর্ণের আলো সমানভাবে বিক্ষিপ্ত হয়, তাই সাদা দেখায়।"
+                },
+                {
+                    question: "আকাশ নীল দেখায় কেন?",
+                    options: ["নীল ছাড়া সাদা আলোর সব রংই বায়ুর অণু দ্বারা দৃঢ়ভাবে খোদাই করা হয়।", "সব রঙের আলো সঠিক অনুপাতে।", "নীল তরঙ্গদৈর্ঘ্য সাদা আলোর মতো অপেক্ষাকৃত কম এবং এটি বায়ুর অণু দ্বারা সবচেয়ে বেশি বিক্ষিপ্ত হয়।", "সাদা আলো সমস্ত বায়ুর অণু দ্বারা প্রতিফলিত হয়।"],
+                    answer: 2,
+                    explanation: "নীল আলোর তরঙ্গদৈর্ঘ্য কম, তাই বেশি বিক্ষেপণ হয়।"
+                },
+                {
+                    question: "আলোর তরল পদার্থে ভাসমান কণার সাথে সংঘর্ষের ফলে সৃষ্ট ঝলকের প্রক্রিয়াকে বলা হয়:",
+                    options: ["রমন প্রভাব", "শামুক প্রভাব", "টিন্ডাল প্রভাব", "হাইজেন এর প্রভাব"],
+                    answer: 2,
+                    explanation: "টিন্ডাল প্রভাব হল কণার দ্বারা আলোর বিক্ষিপ্তকরণ।"
+                },
+                {
+                    question: "যখন আলো একটি মসৃণ ও উজ্জ্বল পৃষ্ঠের উপর পড়ে, তখন কী ধরনের প্রতিফলন ঘটে?",
+                    options: ["বিচ্ছুরিত প্রতিফলন", "অনিয়মিত প্রতিফলন", "নিয়মিত প্রতিফলন", "স্বাভাবিক প্রতিফলন"],
+                    answer: 2,
+                    explanation: "মসৃণ উজ্জ্বল পৃষ্ঠে নিয়মিত প্রতিফলন হয়।"
+                },
+                {
+                    question: "সমতল দর্পণ দ্বারা গঠিত চিত্র-",
+                    options: ["বাস্তব এবং পার্শ্বীয়ভাবে খাড়া", "বাস্তব এবং খাড়া", "ভার্চুয়াল এবং পার্শ্বীয়ভাবে বাস্তব", "ভার্চুয়াল এবং পার্শ্বীয়ভাবে উল্টানো"],
+                    answer: 3,
+                    explanation: "সমতল দর্পণে চিত্র ভার্চুয়াল ও পার্শ্বীয়ভাবে উল্টানো হয়।"
+                },
+                {
+                    question: "একটি সমতল আয়না দ্বারা গঠিত প্রতিচ্ছবি সবসময় হয়-",
+                    options: ["বাস্তব এবং খাড়া", "ভার্চুয়াল এবং বাস্তব", "বাস্তব এবং উল্টানো", "ভার্চুয়াল এবং পার্শ্বীয়ভাবে উল্টানো"],
+                    answer: 3,
+                    explanation: "সমতল আয়নায় চিত্র ভার্চুয়াল ও পার্শ্বীয়ভাবে উল্টানো হয়।"
+                },
+                {
+                    question: "রোগীদের দাঁতের বড় ছবি দেখতে দাঁতের ডাক্তাররা কোন ধরনের আয়না ব্যবহার করেন?",
+                    options: ["গোলাকার এবং উত্তল আয়না", "গোলাকার আয়না", "অবতল আয়না", "উত্তল দর্পণ"],
+                    answer: 2,
+                    explanation: "অবতল আয়না বড় ও বাস্তব চিত্র দেখাতে পারে।"
+                },
+                {
+                    question: "একটি বিন্দুর গোলাকার আয়নার প্রতিফলিত পৃষ্ঠের কেন্দ্র যাকে বলা হয়-",
+                    options: ["বক্রতার কেন্দ্র", "মেরু", "ফোকাস", "প্রধান অক্ষ"],
+                    answer: 0,
+                    explanation: "গোলীয় আয়নার কেন্দ্রকে বক্রতার কেন্দ্র বলে।"
+                },
+                {
+                    question: "নিচের কোনটি বস্তুর চেয়ে বড় ভার্চুয়াল চিত্র তৈরি করতে পারে?",
+                    options: ["অবতল আয়না", "অবতল লেন্স", "উত্তল দর্পণ", "সমতল আয়না"],
+                    answer: 0,
+                    explanation: "অবতল আয়না ফোকাস ও মেরুর মধ্যে বস্তু রাখলে বড় ভার্চুয়াল চিত্র তৈরি হয়।"
+                }
+            ]
+        };
+    </script>
+    
+    <script src="../script.js"></script>
+</body>
+</html>
